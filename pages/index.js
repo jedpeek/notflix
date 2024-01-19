@@ -61,11 +61,16 @@ export default function Home({
         />
         <div className={styles.sectionWrapper}>
           <SectionCards title="Disney" videos={disneyVideos} size="large" />
-          <SectionCards
-            title="Watch Again"
-            videos={watchItAgainVideos}
-            size="small"
-          />
+          {watchItAgainVideos.length ? (
+            <SectionCards
+              title="Watch Again"
+              videos={watchItAgainVideos}
+              size="small"
+            />
+          ) : (
+            false
+          )}
+
           <SectionCards title="Travel" videos={travelVideos} size="small" />
           <SectionCards
             title="Productivity"
