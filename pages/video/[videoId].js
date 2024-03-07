@@ -123,11 +123,11 @@ const Video = ({ video }) => {
               <Like selected={toggleLike} />
             </div>
           </button>
-          <button onClick={handleToggleDislike}>
+          {/* <button onClick={handleToggleDislike}>
             <div className={styles.btnWrapper}>
               <DisLike selected={toggleDisLike} />
             </div>
-          </button>
+          </button> */}
         </div>
         <div className={styles.modalBody}>
           <div className={styles.modalBodyContent}>
